@@ -11,8 +11,7 @@ app.use(express.json());
 // coffeeMaster
 // QxssLBRWHgK2EFbx;
 
-const uri =
-	"mongodb+srv://coffeeMaster:QxssLBRWHgK2EFbx@cluster0.57whvd4.mongodb.net/?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cluster0.57whvd4.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
