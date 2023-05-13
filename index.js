@@ -8,8 +8,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// coffeeMaster
-// QxssLBRWHgK2EFbx;
 
 const uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cluster0.57whvd4.mongodb.net/?retryWrites=true&w=majority`;
 
